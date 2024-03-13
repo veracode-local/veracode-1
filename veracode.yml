@@ -14,7 +14,7 @@ veracode_static_scan:
     trigger: true
     action:
       - opened
-      -closed
+      - closed
       - synchronize
     target_branch:
       - default_branch 
