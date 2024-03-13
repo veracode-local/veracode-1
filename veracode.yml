@@ -37,7 +37,7 @@ veracode_static_scan:
   use_custom_workflow: WORKFLOW_NAME
   #If enabled, you will be able to view static findings as a security issue in GitHub.
   create_code_scanning_alert: false
-  create_issue: false
+  create_issue: true
   profile: ENTER_PROFILE_NAME
   #If enabled, the scan will be triggered when a command matches by either creating an issue or adding a comment to an issue.
   issues:
