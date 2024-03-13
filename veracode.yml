@@ -23,11 +23,11 @@ veracode_static_scan:
   # As an App Profile - given the current name of your scanned repo
   # Use 'none' if you would not like any scans saved to the platform
   analysis_branch: default_branch 
-  analysis_on_platform: true
+  analysis_on_platform: false
   #If the break_build_policy_findings is set to true, the build will break if the pipeline scan finds any policy violations.      
-  break_build_policy_findings: true
+  break_build_policy_findings: false
   #If the break_build_on_error is set to true, the build will break if the scan failed to complete in time or with an error.
-  break_build_on_error: true
+  break_build_on_error: false
   #If the break_build_on_policy_error is set to true, this is the error message that will be displayed if the pipeline scan fails to complete in time or with an error.
   error_message: "Veracode SAST scan faced a problem. Please contact your Veracode administrator for more information. If you are a Veracode administrator, please contact Veracode support."
   policy: 'Veracode Recommended Medium + SCA'
@@ -37,7 +37,7 @@ veracode_static_scan:
   # workflow for each repository.
   use_custom_workflow: WORKFLOW_NAME
   #If enabled, you will be able to view static findings as a security issue in GitHub.
-  create_code_scanning_alert: true
+  create_code_scanning_alert: false
   create_issue: true
   profile: ENTER_PROFILE_NAME
   #If enabled, the scan will be triggered when a command matches by either creating an issue or adding a comment to an issue.
