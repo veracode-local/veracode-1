@@ -139,3 +139,13 @@ jobs:
       branch: ${{ github.event.client_payload.repository.branch }}
       modules_to_scan: ${{ github.event.client_payload.modules_to_scan }}
     secrets: inherit
+
+  Deploy_to_test:
+    runs-on: ubuntu-latest
+    environment:
+      name: test_deploy
+      url: www.veracode.com
+    name: Deploy to test
+    steps:
+     - name: 'no-op'
+       run: echo "::deployed to test environment"
