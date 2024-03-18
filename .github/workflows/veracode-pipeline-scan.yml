@@ -102,6 +102,7 @@ jobs:
           github-token: ${{ inputs.token }}
 
   Deploy_to_test:
+    needs: pipeline_scan
     runs-on: ubuntu-latest
     environment:
       name: test_deploy
