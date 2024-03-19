@@ -103,6 +103,7 @@ jobs:
 
   Deploy_to_test:
     needs: create-issues
+    if: always()
     runs-on: ubuntu-latest
     environment:
       name: test_deploy
