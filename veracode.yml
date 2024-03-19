@@ -45,6 +45,8 @@ veracode_static_scan:
   trigger: false
   commands:
     - "ENTER_COMMAND_TO_EXECUTE_SCAN"
+  deployment_protection: true
+  deployment_rule: [sast-pipeline-scan, sast-policy-scan, sca-scan]
 
 veracode_sca_scan:   
   # Please only specify trigger:true for either push event or 
